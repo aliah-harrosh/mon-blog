@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12"> 
+		    <h2>Posts</h2> 
+            <ul class="list-group">
+             <script type="javascript">
+             alert('t');
+         </script>
+
+              <app-post-list-item-component   *ngFor = "let post of PostArray; let i=index" 
+              [PostTitleItem]=	"post.title"
+              [PostcontentItem]="post.content"
+              [PostloveItsItem]="post.loveIts"
+              [Postcreated_atItem]="post.created_at"
+
+ 
+
+             >
+              	
+              </app-post-list-item-component>
+              
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+ 
